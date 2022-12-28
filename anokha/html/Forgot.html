@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgot Password</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1000/1000948.png">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url('https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2020/05/amrita-vishwa-vidyapeetham-coimbatore-campus-dron-image-01-2.jpg');
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #2B7A78;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #2B7A78;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #3AAFA9;
+    border: 2px solid #2B7A78;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #2B7A78;
+    color: #2B7A78;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #3AAFA9;
+}
+.content p{
+    width: 55%;
+    color: #17252A;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+</style>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="http://ieomsociety.org/india2021/wp-content/uploads/2021/01/Logo_AMRITA-2.png" class="logo">
+            <ul>
+				<li><a href="../index.html" >Home</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+				<li><a href="https://www.amrita.edu/about" target="_blank">About</a></li>
+            </ul>
+        </nav>
+</body>
+<style>
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3AAFA9;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #DEF2F1;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms{
+    height: 600px;
+}
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #2B7A78;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: black;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: black;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: black;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text{
+    color: #2B7A78;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #17252A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #2B7A78;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Reset Password</span>
+
+                                <form action="#" name="inForm" onsubmit="return verify()">
+                    <div class="input-field">
+                        <input name="email" id="email" type="text" placeholder="Enter your email" name="Name" required>
+                        <i class="uil uil-envelope icon"></i>0
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your New Password" required="" name="Name">
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+					<div class="input-field">
+                        <input type="number" class="number" placeholder="Enter Mobile number" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Agree,All terms and Conditions </label>
+                        </div>
+                        
+                    
+
+                    <div class="input-field button">
+                        <input type="submit" onsubmit="submit" value="RESET">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Remembered Password?<br/>
+                        <a href="Login and Sign Up.html" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+</body>
+</html>
