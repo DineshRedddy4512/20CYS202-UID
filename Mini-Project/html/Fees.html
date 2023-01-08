@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 25%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #00ffa2;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center">Fees Pricing Tables.</h1>
+<p style="text-align:center">If you are a student you get 20% discount.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#92a315">free</li>
+    <li class="grey">$ 00.00 / 10 days(free trail)</li>
+    <li>10 days</li>
+    <li>free trail videos only</li>
+    <li>Can't download</li>
+    <li>If you want continue after 10 days update your plan</li>
+    <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#0d6734">Basic</li>
+      <li class="grey">$ 9.99 / 3 months</li>
+      <li>3 Months plan</li>
+      <li>Applicable for 3 months and few videos</li>
+      <li>Can Download limited videos</li>
+      <li>After 3 months if you want to continue must update the plan</li>
+      <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+    </ul>
+  </div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#750606">Pro</li>
+    <li class="grey">$ 24.99 / 6 months</li>
+    <li>6 Months plan</li>
+    <li>Applicable for 6 months and most videos</li>
+    <li>Can Download any videos</li>
+    <li>After 6 months if you want to continue must update the plan</li>
+    <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#a5a2c2">Premium</li>
+    <li class="grey">$ 49.99 / year</li>
+    <li>One year plan</li>
+    <li>Applicable for 1 year and all videos</li>
+    <li>Can Download any videos</li>
+    <li>After 1 year we get 2 months free after that you must update the plan</li>
+    <li class="grey"><a href="../html/Pay.html" class="button">Pay</a></li>
+  </ul>
+</div>
+
+<h2><center>After making payment if you want to go back click on this button</h2></center>
+<center><button><a href="../index.html">Go to Home</a></button></center>
+
+</body>
+</html>
